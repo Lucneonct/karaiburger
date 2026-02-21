@@ -1,10 +1,11 @@
 <script setup>
+const base = import.meta.env.BASE_URL
 </script>
 
 <template>
   <header class="header">
     <div class="header-inner">
-      <img src="/img/logo.png" alt="Karaí" class="logo" />
+      <img :src="`${base}img/logo.png`" alt="Karaí" class="logo" />
       <div class="header-text">
         <h1>Karaí</h1>
         <p>Armá tu pedido y envialo por WhatsApp</p>
